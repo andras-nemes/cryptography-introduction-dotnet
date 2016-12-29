@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomNumberGenerator", "RandomNumberGenerator\RandomNumberGenerator.csproj", "{E78EE02C-EB05-440C-A65B-985647F6E6B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeTester", "CodeTester\CodeTester.csproj", "{14EFB8B3-C0BF-4C42-A439-490AFE66820B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashingAlgos", "HashingAlgos\HashingAlgos.csproj", "{75777E66-150C-41A0-B9D0-7D6F2E8A8624}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymmetricEnryption", "SymmetricEnryption\SymmetricEnryption.csproj", "{11D9110E-9284-4401-B12B-0F35CDD700F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsymmetricEncryption", "AsymmetricEncryption\AsymmetricEncryption.csproj", "{A7112ACF-4577-4B50-81AE-00A4E4DA1104}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridEncryption", "HybridEncryption\HybridEncryption.csproj", "{D3E573AA-56FC-4067-8DA1-C56741C46185}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalSignatures", "DigitalSignatures\DigitalSignatures.csproj", "{E6FED913-CF25-470E-89F9-5301C7174593}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E78EE02C-EB05-440C-A65B-985647F6E6B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E78EE02C-EB05-440C-A65B-985647F6E6B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E78EE02C-EB05-440C-A65B-985647F6E6B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E78EE02C-EB05-440C-A65B-985647F6E6B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14EFB8B3-C0BF-4C42-A439-490AFE66820B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14EFB8B3-C0BF-4C42-A439-490AFE66820B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14EFB8B3-C0BF-4C42-A439-490AFE66820B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14EFB8B3-C0BF-4C42-A439-490AFE66820B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75777E66-150C-41A0-B9D0-7D6F2E8A8624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75777E66-150C-41A0-B9D0-7D6F2E8A8624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75777E66-150C-41A0-B9D0-7D6F2E8A8624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75777E66-150C-41A0-B9D0-7D6F2E8A8624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11D9110E-9284-4401-B12B-0F35CDD700F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11D9110E-9284-4401-B12B-0F35CDD700F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11D9110E-9284-4401-B12B-0F35CDD700F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11D9110E-9284-4401-B12B-0F35CDD700F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7112ACF-4577-4B50-81AE-00A4E4DA1104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7112ACF-4577-4B50-81AE-00A4E4DA1104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7112ACF-4577-4B50-81AE-00A4E4DA1104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7112ACF-4577-4B50-81AE-00A4E4DA1104}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3E573AA-56FC-4067-8DA1-C56741C46185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3E573AA-56FC-4067-8DA1-C56741C46185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3E573AA-56FC-4067-8DA1-C56741C46185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3E573AA-56FC-4067-8DA1-C56741C46185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6FED913-CF25-470E-89F9-5301C7174593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6FED913-CF25-470E-89F9-5301C7174593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6FED913-CF25-470E-89F9-5301C7174593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6FED913-CF25-470E-89F9-5301C7174593}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

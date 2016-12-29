@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3E573AA-56FC-4067-8DA1-C56741C46185}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HybridEncryption</RootNamespace>
+    <AssemblyName>HybridEncryption</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsymmetricPublicKey.cs" />
+    <Compile Include="EncryptedMessage.cs" />
+    <Compile Include="SecretMessageParticipant.cs" />
+    <Compile Include="SecretMessageReceiver.cs" />
+    <Compile Include="SecretMessageSender.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AsymmetricEncryption\AsymmetricEncryption.csproj">
+      <Project>{a7112acf-4577-4b50-81ae-00a4e4da1104}</Project>
+      <Name>AsymmetricEncryption</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DigitalSignatures\DigitalSignatures.csproj">
+      <Project>{e6fed913-cf25-470e-89f9-5301c7174593}</Project>
+      <Name>DigitalSignatures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HashingAlgos\HashingAlgos.csproj">
+      <Project>{75777e66-150c-41a0-b9d0-7d6f2e8a8624}</Project>
+      <Name>HashingAlgos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SymmetricEnryption\SymmetricEnryption.csproj">
+      <Project>{11d9110e-9284-4401-b12b-0f35cdd700f1}</Project>
+      <Name>SymmetricEnryption</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
